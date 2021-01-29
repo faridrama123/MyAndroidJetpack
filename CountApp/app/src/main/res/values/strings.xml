@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CountApp</string>
+    <string name="seconds">%d seconds elapsed</string>
+    <string name="hello_text">Hello honey!</string>
 </resources>
