@@ -14,7 +14,6 @@ class MainViewModel : ViewModel() {
     private  val mInitialTime = SystemClock.elapsedRealtime()
     private val mElapsedTime  = MutableLiveData<Long?>()
 
-
     init {
         val timer = Timer()
         timer.scheduleAtFixedRate(object :TimerTask(){
@@ -29,5 +28,6 @@ class MainViewModel : ViewModel() {
     fun  getElapsedTime () : LiveData<Long?>{
         return  mElapsedTime
     }
+
 
 }
