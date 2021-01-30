@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">LiveDataWithAPI</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
+    <string name="write_your_review_here">write_your_review_here</string>
+    <string name="send">send</string>
+    <string name="review">review</string>
+
+
+
+
 </resources>
