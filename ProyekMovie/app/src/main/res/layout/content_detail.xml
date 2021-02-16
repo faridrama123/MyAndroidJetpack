@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageback"
+        android:src="@color/teal_200"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+ />
+
+    <ImageView
+        android:layout_below="@+id/imageback"
+        android:id="@+id/img_poster"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:src="@color/teal_200"
+     />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/imageback"
+        android:layout_toRightOf="@+id/img_poster"
+        android:layout_width="wrap_content"
+        android:text="Tittle"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/text_bahasa"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/text_title"
+        android:layout_toRightOf="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:text="@string/bahasa"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/text_title"
+        android:layout_toRightOf="@+id/img_poster"
+        android:layout_width="wrap_content"
+        android:text="Date"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/text_genre"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/text_bahasa"
+        android:layout_toRightOf="@+id/img_poster"
+        android:layout_width="wrap_content"
+        android:text="Genre: "
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/text_rate"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/text_genre"
+        android:layout_toRightOf="@+id/img_poster"
+        android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+        android:layout_width="wrap_content"
+        android:text="90"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+
+
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Overview"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/img_poster"
+      />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="desc"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/text_desc"
+     />
+
+
+
+</RelativeLayout>
