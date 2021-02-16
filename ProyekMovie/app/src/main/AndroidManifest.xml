@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.faridrama123.proyekmovie">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyekMovie">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".ui.detail.DetailInfoActivity"
+            android:label="Movie Catalog"
+            android:parentActivityName="com.faridrama123.proyekmovie.ui.home.HomeActivity"
+            android:theme="@style/Theme.ProyekMovie">
+        </activity>
+
+        <activity android:name=".ui.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,5 +25,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
