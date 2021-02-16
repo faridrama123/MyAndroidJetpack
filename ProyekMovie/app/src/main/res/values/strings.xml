@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Proyek Movie</string>
+
+    <string name="MOVIE">MOVIE</string>
+    <string name="TVSHOW">TVSHOW</string>
+    <string name="bahasa">(%s)</string>
+
 </resources>
