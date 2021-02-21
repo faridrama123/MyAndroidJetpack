@@ -11,6 +11,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.faridrama123.proyekmovie.R
 import com.faridrama123.proyekmovie.ViewModelFactory
 import com.faridrama123.proyekmovie.data.local.entity.ResultsMovieEntity
+import com.faridrama123.proyekmovie.data.local.entity.ResultsTVShowEntity
 import com.faridrama123.proyekmovie.databinding.ActivityDetailBinding
 import com.faridrama123.proyekmovie.databinding.ContentDetailBinding
 import com.faridrama123.proyekmovie.ui.detail.DetailInfoViewModel
@@ -49,26 +50,17 @@ class DetailInfoActivity : AppCompatActivity() {
                     activityDetailBinding.content.visibility = View.VISIBLE
                 })
             }
-//            if (extras.containsKey("tv") && tvId != null) {
-//                viewModel.setSelectedCourse(tvId)
-//                populateTv(viewModel.gettv());
-//            }
+            if (extras.containsKey("tv") && tvId != null) {
+                viewModel.setSelectedCourse(tvId)
+                viewModel.getTVShow().observe(this, { populateTVShow(it)
+                    activityDetailBinding.progressBar.visibility = View.GONE
+                    activityDetailBinding.content.visibility = View.VISIBLE
+                })
+            }
         }
     }
 
-//    private fun populateTv(tvEntity: TvSHOWEntity) {
-//        detailContentBinding!!.textTitle.text = tvEntity.title
-//        detailContentBinding!!.textDate.text = tvEntity.rilis
-//        detailContentBinding!!.textGenre.text = tvEntity.genre
-//        detailContentBinding!!.textRate.text = tvEntity.rating
-//        detailContentBinding!!.textDescription.text = tvEntity.desc
-//        Glide.with(this)
-//                .load(tvEntity.img)
-//                .transform(RoundedCorners(20))
-//                .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
-//                        .error(R.drawable.ic_error))
-//                .into(detailContentBinding!!.imgPoster)
-//    }
+
 
     private fun populateMovie(movieEntity: ResultsMovieEntity) {
         detailContentBinding!!.textTitle.text = movieEntity.title
@@ -91,5 +83,25 @@ class DetailInfoActivity : AppCompatActivity() {
             .into(detailContentBinding!!.imageback)
     }
 
+    private fun populateTVShow(tvShowEntity: ResultsTVShowEntity) {
+        detailContentBinding!!.textTitle.text = tvShowEntity.originalName
+        detailContentBinding!!.textDate.text = tvShowEntity.firstAirDate
+        detailContentBinding!!.textGenre.text = tvShowEntity.genreIds.toString()
+        detailContentBinding!!.textRate.text = tvShowEntity.voteAverage.toString()
+        detailContentBinding!!.textBahasa.text = resources.getString(R.string.bahasa,  tvShowEntity.originalLanguage.toString())
+        detailContentBinding!!.textDescription.text = tvShowEntity.overview
+        Glide.with(this)
+            .load("https://image.tmdb.org/t/p/w500/"+tvShowEntity.posterPath)
+            .transform(RoundedCorners(20))
+            .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
+                .error(R.drawable.ic_error))
+            .into(detailContentBinding!!.imgPoster)
+        Glide.with(this)
+            .load("https://image.tmdb.org/t/p/w500/"+tvShowEntity.backdropPath)
+            .transform(RoundedCorners(20))
+            .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
+                .error(R.drawable.ic_error))
+            .into(detailContentBinding!!.imageback)
+    }
 
 }

@@ -43,7 +43,7 @@ class TVShowAdapter internal constructor(private val callback: TVShowFragmentCal
             binding.tvItemDate.text = tvshow.firstAirDate
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailInfoActivity::class.java)
-                intent.putExtra(DetailInfoActivity.EXTRA_COURSE2, tvshow.id)
+                intent.putExtra(DetailInfoActivity.EXTRA_COURSE2, tvshow.id.toString())
                 itemView.context.startActivity(intent)
             }
             binding.imgShare.setOnClickListener { callback.onShareClick(tvshow) }

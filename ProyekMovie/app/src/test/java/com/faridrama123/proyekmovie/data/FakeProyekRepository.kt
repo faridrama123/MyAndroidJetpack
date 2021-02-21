@@ -10,15 +10,15 @@ import com.faridrama123.proyekmovie.data.local.entity.ResultsTVShowEntity
 import com.google.gson.annotations.SerializedName
 import java.util.ArrayList
 
-class ProyekRepository private constructor(private  val remoteDataSource: RemoteDataSource) : ProyekDataSource{
+class FakeProyekRepository(private  val remoteDataSource: RemoteDataSource) : ProyekDataSource{
 
     companion object {
         @Volatile
-        private var instance: ProyekRepository? = null
+        private var instance: FakeProyekRepository? = null
 
-        fun getInstance(remoteData: RemoteDataSource): ProyekRepository =
+        fun getInstance(remoteData: RemoteDataSource): FakeProyekRepository =
             instance ?: synchronized(this) {
-                instance ?: ProyekRepository(remoteData)
+                instance ?: FakeProyekRepository(remoteData)
             }
     }
     override fun getMovie(): LiveData<List<ResultsMovieEntity>> {
