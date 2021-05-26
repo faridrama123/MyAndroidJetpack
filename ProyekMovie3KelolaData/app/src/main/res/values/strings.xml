@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ProyekMovie 3 Kelola Data</string>
+    <string name="tab1">Movie</string>
+    <string name="tab2">Tv Show</string>
+    <string name="tab3">Movie Fav</string>
+    <string name="tab4">Tv Show Fav</string>
+
+
+    <string name="title">title</string>
+    <string name="rilis">date</string>
+    <string name="rate">99</string>
+    <string name="genre">genre</string>
+
+
+    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
+    <string name="message_ok">OK</string>
+
+    <string name="languange">(%s)</string>
+
+    <string name="menu_favorite">Favorite</string>
+
+
+
+</resources>

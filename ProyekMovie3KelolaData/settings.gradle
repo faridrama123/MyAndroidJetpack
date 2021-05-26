@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ProyekMovie 3 Kelola Data"
