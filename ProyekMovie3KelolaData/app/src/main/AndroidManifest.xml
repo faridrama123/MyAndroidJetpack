@@ -15,9 +15,7 @@
 
 
         <activity android:name=".ui.home.HomeActivity"
-            android:label="Movie Catalogue Kelola Data"
-            >
-
+            android:label="Movie Catalogue Kelola Data">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

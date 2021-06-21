@@ -5,11 +5,12 @@ import ResultsTVShowResponse
 import android.os.Handler
 import android.os.Looper
 import com.faridrama123.proyekmovie.data.local.entity.ResultsMovieEntity
+import com.faridrama123.proyekmovie.utils.EspressoIdlingResource
 import com.faridrama123.proyekmovie.utils.JsonHelper
 
 class RemoteDataSource  private constructor(private  val jsonHelper: JsonHelper ){
 
-       private val handler = Handler(Looper.getMainLooper())
+    private val handler = Handler(Looper.getMainLooper())
 
     companion object{
         private const val SERVICE_LATENCY_IN_MILLIS: Long = 2000
@@ -24,16 +25,26 @@ class RemoteDataSource  private constructor(private  val jsonHelper: JsonHelper 
     }
 
     fun getMovie(callback: LoadMovieCallback){
-        handler.postDelayed({ callback.onMovieReceived(jsonHelper.loadMovie()) }, SERVICE_LATENCY_IN_MILLIS)
+        EspressoIdlingResource.increment()
+        handler.postDelayed({
+            callback.onMovieReceived(jsonHelper.loadMovie())
+            EspressoIdlingResource.decrement()
+
+        }, SERVICE_LATENCY_IN_MILLIS)
+    }
+
+    fun getTVShow(callback: LoadTVShowCallback){
+        EspressoIdlingResource.increment()
+        handler.postDelayed({
+            callback.onTVShowReceived(jsonHelper.loadTVShow())
+            EspressoIdlingResource.decrement()
+        }, SERVICE_LATENCY_IN_MILLIS)
     }
 
     interface LoadMovieCallback {
         fun onMovieReceived(movieResponses: List<ResultsMovieResponse>)
     }
 
-    fun getTVShow(callback: LoadTVShowCallback){
-        handler.postDelayed({ callback.onTVShowReceived(jsonHelper.loadTVShow()) }, SERVICE_LATENCY_IN_MILLIS)
-    }
     interface LoadTVShowCallback {
         fun onTVShowReceived(tvShowResponse : List<ResultsTVShowResponse>)
     }

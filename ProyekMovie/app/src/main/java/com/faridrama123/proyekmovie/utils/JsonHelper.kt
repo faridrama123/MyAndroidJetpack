@@ -41,8 +41,8 @@ class JsonHelper(private val context: Context) {
                 val title =  movie.getString("title")
                 val genreIds = movie.getJSONArray("genre_ids")
                 val genreIdsList = ArrayList<Int>()
-                for (i in 0 until genreIds.length()) {
-                    genreIdsList.add(genreIds.get(i) as Int)
+                for (genre in 0 until genreIds.length()) {
+                    genreIdsList.add(genreIds.get(genre) as Int)
                 }
                 val posterPath=  movie.getString("poster_path")
                 val backdropPath=  movie.getString("backdrop_path")
@@ -76,14 +76,14 @@ class JsonHelper(private val context: Context) {
                 val originalLanguage      =  tv.getString("original_language")
                 val genreIds                = tv.getJSONArray("genre_ids")
                 val genreIdsList            = ArrayList<Int>()
-                for (i in 0 until genreIds.length()) {
-                    genreIdsList.add(genreIds.get(i) as Int)
+                for (genre in 0 until genreIds.length()) {
+                    genreIdsList.add(genreIds.get(genre) as Int)
                 }
                 val posterPath              =  tv.getString("poster_path")
                 val originCountry            = tv.getJSONArray("origin_country")
                 val originCountryList        = ArrayList<String>()
-                for (i in 0 until originCountry.length()) {
-                    originCountryList.add(originCountry.get(i) as String)
+                for (origincountry in 0 until originCountry.length()) {
+                    originCountryList.add(originCountry.get(origincountry) as String)
                 }
                 val backdropPath            =  tv.getString("backdrop_path")
                 val originalName            =  tv.getString("original_name")

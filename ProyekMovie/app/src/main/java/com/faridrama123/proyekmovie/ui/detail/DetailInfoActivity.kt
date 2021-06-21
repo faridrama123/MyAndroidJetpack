@@ -44,14 +44,15 @@ class DetailInfoActivity : AppCompatActivity() {
             activityDetailBinding.content.visibility = View.INVISIBLE
 
             if (extras.containsKey("movie") && movieId != null) {
-                viewModel.setSelectedCourse(movieId)
-                viewModel.getMovie().observe(this, { populateMovie(it)
+                viewModel.setSelected(movieId)
+                viewModel.getMovie().observe(this, {
+                    populateMovie(it)
                     activityDetailBinding.progressBar.visibility = View.GONE
                     activityDetailBinding.content.visibility = View.VISIBLE
                 })
             }
             if (extras.containsKey("tv") && tvId != null) {
-                viewModel.setSelectedCourse(tvId)
+                viewModel.setSelected(tvId)
                 viewModel.getTVShow().observe(this, { populateTVShow(it)
                     activityDetailBinding.progressBar.visibility = View.GONE
                     activityDetailBinding.content.visibility = View.VISIBLE
