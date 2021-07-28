@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.faridrama123.app.data.source.remote.ApiResponse
 import com.faridrama123.app.data.source.remote.StatusResponse
-import com.faridrama123.app.utils.AppExecutors
-import com.faridrama123.app.vo.Resource
+import com.faridrama123.app.movieapp.utils.AppExecutors
+import com.faridrama123.app.movieapp.vo.Resource
 
 
 abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecutors: AppExecutors) {

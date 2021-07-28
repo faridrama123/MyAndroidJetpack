@@ -1,6 +1,5 @@
 package com.faridrama123.app.data
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
@@ -11,8 +10,8 @@ import com.faridrama123.app.data.source.remote.ApiResponse
 import com.faridrama123.app.data.source.remote.RemoteDataSource
 import com.faridrama123.app.data.source.remote.response.ResultsMovieResponse
 import com.faridrama123.app.data.source.remote.response.ResultsTVShowResponse
-import com.faridrama123.app.utils.AppExecutors
-import com.faridrama123.app.vo.Resource
+import com.faridrama123.app.movieapp.utils.AppExecutors
+import com.faridrama123.app.movieapp.vo.Resource
 
 
 class CatalogueRepository private constructor(

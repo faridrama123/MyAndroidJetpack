@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.paging.PagedList
 import com.faridrama123.app.data.source.local.entity.MovieEntity
 import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.vo.Resource
+import com.faridrama123.app.movieapp.vo.Resource
 
 
 interface CatalogueDataSource {
