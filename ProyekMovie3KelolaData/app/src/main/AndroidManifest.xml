@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.faridrama123.app">
+    package="com.faridrama123.app.movieapp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ProyekMovie3KelolaData">
 
 
-        <activity android:name=".ui.home.HomeActivity"
+        <activity android:name="com.faridrama123.app.movieapp.ui.home.HomeActivity"
             android:label="Movie Catalogue Kelola Data">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
