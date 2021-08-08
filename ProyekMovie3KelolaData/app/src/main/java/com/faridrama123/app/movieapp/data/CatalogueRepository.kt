@@ -1,15 +1,15 @@
-package com.faridrama123.app.data
+package com.faridrama123.app.movieapp.data
 
 import androidx.lifecycle.LiveData
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.faridrama123.app.data.source.local.LocalDataSource
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.data.source.remote.ApiResponse
-import com.faridrama123.app.data.source.remote.RemoteDataSource
-import com.faridrama123.app.data.source.remote.response.ResultsMovieResponse
-import com.faridrama123.app.data.source.remote.response.ResultsTVShowResponse
+import com.faridrama123.app.movieapp.data.source.local.LocalDataSource
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
+import com.faridrama123.app.movieapp.data.source.remote.ApiResponse
+import com.faridrama123.app.movieapp.data.source.remote.RemoteDataSource
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsMovieResponse
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsTVShowResponse
 import com.faridrama123.app.movieapp.utils.AppExecutors
 import com.faridrama123.app.movieapp.vo.Resource
 

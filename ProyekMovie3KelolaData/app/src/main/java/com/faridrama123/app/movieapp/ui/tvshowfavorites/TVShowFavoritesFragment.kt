@@ -1,22 +1,19 @@
-package com.faridrama123.app.ui.tvshowfavorites
+package com.faridrama123.app.movieapp.ui.tvshowfavorites
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.faridrama123.app.R
-import com.faridrama123.app.databinding.FragmentFavTvshowBinding
-import com.faridrama123.app.databinding.FragmentTvshowBinding
+import com.faridrama123.app.movieapp.R
+import com.faridrama123.app.movieapp.databinding.FragmentFavTvshowBinding
 
-import com.faridrama123.app.ui.tvshow.TVShowAdapter
-import com.faridrama123.app.viewmodel.ViewModelFactory
+import com.faridrama123.app.movieapp.ui.tvshow.TVShowAdapter
+import com.faridrama123.app.movieapp.viewmodel.ViewModelFactory
 import com.google.android.material.snackbar.Snackbar
 
 

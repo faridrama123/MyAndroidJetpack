@@ -1,9 +1,9 @@
-package com.faridrama123.app.data
+package com.faridrama123.app.movieapp.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.faridrama123.app.data.source.remote.ApiResponse
-import com.faridrama123.app.data.source.remote.StatusResponse
+import com.faridrama123.app.movieapp.data.source.remote.ApiResponse
+import com.faridrama123.app.movieapp.data.source.remote.StatusResponse
 import com.faridrama123.app.movieapp.utils.AppExecutors
 import com.faridrama123.app.movieapp.vo.Resource
 

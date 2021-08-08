@@ -1,4 +1,4 @@
-package com.faridrama123.app.data.source.remote.response
+package com.faridrama123.app.movieapp.data.source.remote.response
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

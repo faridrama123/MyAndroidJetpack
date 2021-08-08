@@ -1,13 +1,13 @@
-package com.faridrama123.app.ui.detail
+package com.faridrama123.app.movieapp.ui.detail
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.faridrama123.app.data.CatalogueRepository
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.utils.DataDummy
-import com.faridrama123.app.vo.Resource
+import com.faridrama123.app.movieapp.data.CatalogueRepository
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
+import com.faridrama123.app.movieapp.utils.DataDummy
+import com.faridrama123.app.movieapp.vo.Resource
 import com.faridrama123.proyekmovie.ui.detail.DetailInfoViewModel
 
 import org.junit.Assert.assertEquals

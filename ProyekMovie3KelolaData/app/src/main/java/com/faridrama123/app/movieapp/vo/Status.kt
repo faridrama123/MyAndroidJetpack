@@ -1,4 +1,4 @@
-package com.faridrama123.app.vo
+package com.faridrama123.app.movieapp.vo
 
 enum class Status {
     SUCCESS,

@@ -1,4 +1,4 @@
-package com.faridrama123.app.data.source.remote
+package com.faridrama123.app.movieapp.data.source.remote
 
 
 class ApiResponse<T>(val status: StatusResponse, val body: T, val message: String?) {

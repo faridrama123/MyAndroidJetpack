@@ -1,4 +1,4 @@
-package com.faridrama123.app.ui.home
+package com.faridrama123.app.movieapp.ui.home
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.core.app.ActivityScenario
@@ -9,9 +9,9 @@ import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
-import com.faridrama123.app.R
-import com.faridrama123.app.utils.DataDummy
-import com.faridrama123.app.utils.EspressoIdlingResource
+import com.faridrama123.app.movieapp.R
+import com.faridrama123.app.movieapp.utils.DataDummy
+import com.faridrama123.app.movieapp.utils.EspressoIdlingResource
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

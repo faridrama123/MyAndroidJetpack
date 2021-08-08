@@ -1,8 +1,8 @@
-package com.faridrama123.app.ui.home
+package com.faridrama123.app.movieapp.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.faridrama123.app.databinding.ActivityHomeBinding
+import com.faridrama123.app.movieapp.databinding.ActivityHomeBinding
 
 
 class HomeActivity : AppCompatActivity() {

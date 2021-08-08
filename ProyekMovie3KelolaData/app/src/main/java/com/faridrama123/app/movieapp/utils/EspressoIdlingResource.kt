@@ -1,4 +1,4 @@
-package com.faridrama123.app.utils
+package com.faridrama123.app.movieapp.utils
 
 import androidx.test.espresso.idling.CountingIdlingResource
 

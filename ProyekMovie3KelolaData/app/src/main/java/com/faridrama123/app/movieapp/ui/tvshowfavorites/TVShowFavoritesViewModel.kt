@@ -1,12 +1,10 @@
-package com.faridrama123.app.ui.tvshowfavorites
+package com.faridrama123.app.movieapp.ui.tvshowfavorites
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
-import com.faridrama123.app.data.CatalogueRepository
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.vo.Resource
+import com.faridrama123.app.movieapp.data.CatalogueRepository
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
 
 
 class TVShowFavoritesViewModel(private val catalogueRepository: CatalogueRepository) : ViewModel() {

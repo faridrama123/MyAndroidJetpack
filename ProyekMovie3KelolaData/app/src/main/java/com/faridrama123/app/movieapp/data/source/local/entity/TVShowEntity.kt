@@ -1,4 +1,4 @@
-package com.faridrama123.app.data.source.local.entity
+package com.faridrama123.app.movieapp.data.source.local.entity
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

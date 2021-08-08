@@ -4,25 +4,20 @@ import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.WindowCompat
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProvider.NewInstanceFactory
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.bumptech.glide.request.RequestOptions
-import com.faridrama123.app.R
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.databinding.ActivityDetailBinding
-import com.faridrama123.app.databinding.ContentDetailBinding
-import com.faridrama123.app.viewmodel.ViewModelFactory
-import com.faridrama123.app.vo.Status
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
 
-import com.faridrama123.proyekmovie.ui.detail.DetailInfoViewModel
+import com.faridrama123.app.movieapp.R
+import com.faridrama123.app.movieapp.databinding.ActivityDetailBinding
+import com.faridrama123.app.movieapp.databinding.ContentDetailBinding
+import com.faridrama123.app.movieapp.viewmodel.ViewModelFactory
+import com.faridrama123.app.movieapp.vo.Status
 
 class DetailInfoActivity : AppCompatActivity() {
 

@@ -1,14 +1,14 @@
-package com.faridrama123.app.viewmodel
+package com.faridrama123.app.movieapp.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.faridrama123.app.data.CatalogueRepository
-import com.faridrama123.app.ui.movie.MovieViewModel
-import com.faridrama123.app.ui.moviefavorites.MovieFavoritesViewModel
-import com.faridrama123.app.ui.tvshow.TVShowViewModel
-import com.faridrama123.app.ui.tvshowfavorites.TVShowFavoritesViewModel
-import com.faridrama123.app.di.Injection
+import com.faridrama123.app.movieapp.data.CatalogueRepository
+import com.faridrama123.app.movieapp.ui.movie.MovieViewModel
+import com.faridrama123.app.movieapp.ui.moviefavorites.MovieFavoritesViewModel
+import com.faridrama123.app.movieapp.ui.tvshow.TVShowViewModel
+import com.faridrama123.app.movieapp.ui.tvshowfavorites.TVShowFavoritesViewModel
+import com.faridrama123.app.movieapp.di.Injection
 import com.faridrama123.proyekmovie.ui.detail.DetailInfoViewModel
 
 

@@ -1,14 +1,13 @@
-package com.faridrama123.app.ui.tvshowfavorites
+package com.faridrama123.app.movieapp.ui.tvshowfavorites
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.paging.PagedList
 import androidx.paging.PositionalDataSource
-import com.faridrama123.app.data.CatalogueRepository
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.utils.DataDummy
+import com.faridrama123.app.movieapp.data.CatalogueRepository
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
+import com.faridrama123.app.movieapp.utils.DataDummy
 import org.junit.Assert
 import org.junit.Assert.assertEquals
 import org.junit.Before

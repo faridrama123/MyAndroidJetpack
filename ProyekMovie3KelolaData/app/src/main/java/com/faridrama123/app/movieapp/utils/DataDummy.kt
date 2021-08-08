@@ -1,9 +1,9 @@
-package com.faridrama123.app.utils
+package com.faridrama123.app.movieapp.utils
 
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.data.source.remote.response.ResultsMovieResponse
-import com.faridrama123.app.data.source.remote.response.ResultsTVShowResponse
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsMovieResponse
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsTVShowResponse
 import java.util.ArrayList
 
 object DataDummy {

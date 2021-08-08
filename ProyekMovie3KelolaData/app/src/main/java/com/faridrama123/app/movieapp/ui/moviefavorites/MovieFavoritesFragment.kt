@@ -1,22 +1,18 @@
-package com.faridrama123.app.ui.moviefavorites
+package com.faridrama123.app.movieapp.ui.moviefavorites
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.faridrama123.app.R
-import com.faridrama123.app.databinding.FragmentFavMovieBinding
-import com.faridrama123.app.databinding.FragmentMovieBinding
-import com.faridrama123.app.ui.movie.MovieAdapter
-import com.faridrama123.app.viewmodel.ViewModelFactory
-import com.faridrama123.app.vo.Status
+import com.faridrama123.app.movieapp.R
+import com.faridrama123.app.movieapp.databinding.FragmentFavMovieBinding
+import com.faridrama123.app.movieapp.ui.movie.MovieAdapter
+import com.faridrama123.app.movieapp.viewmodel.ViewModelFactory
 import com.google.android.material.snackbar.Snackbar
 
 

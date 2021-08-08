@@ -1,4 +1,4 @@
-package com.faridrama123.app.utils
+package com.faridrama123.app.movieapp.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer

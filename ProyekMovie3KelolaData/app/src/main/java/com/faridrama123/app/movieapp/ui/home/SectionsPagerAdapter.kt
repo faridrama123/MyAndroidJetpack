@@ -1,15 +1,15 @@
-package com.faridrama123.app.ui.home
+package com.faridrama123.app.movieapp.ui.home
 
 import android.content.Context
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.faridrama123.app.R
-import com.faridrama123.app.ui.movie.MovieFragment
-import com.faridrama123.app.ui.moviefavorites.MovieFavoritesFragment
-import com.faridrama123.app.ui.tvshow.TVShowFragment
-import com.faridrama123.app.ui.tvshowfavorites.TVShowFavoritesFragment
+import com.faridrama123.app.movieapp.R
+import com.faridrama123.app.movieapp.ui.movie.MovieFragment
+import com.faridrama123.app.movieapp.ui.moviefavorites.MovieFavoritesFragment
+import com.faridrama123.app.movieapp.ui.tvshow.TVShowFragment
+import com.faridrama123.app.movieapp.ui.tvshowfavorites.TVShowFavoritesFragment
 
 
 /**

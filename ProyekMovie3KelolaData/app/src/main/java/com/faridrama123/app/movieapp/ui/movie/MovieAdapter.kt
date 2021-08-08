@@ -1,4 +1,4 @@
-package com.faridrama123.app.ui.movie
+package com.faridrama123.app.movieapp.ui.movie
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.faridrama123.app.R
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.databinding.ItemsListBinding
+import com.faridrama123.app.movieapp.R
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.databinding.ItemsListBinding
 import com.faridrama123.proyekmovie.ui.detail.DetailInfoActivity
 
 

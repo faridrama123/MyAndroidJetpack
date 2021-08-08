@@ -1,11 +1,10 @@
-package com.faridrama123.app.ui.moviefavorites
+package com.faridrama123.app.movieapp.ui.moviefavorites
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
-import com.faridrama123.app.data.CatalogueRepository
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.vo.Resource
+import com.faridrama123.app.movieapp.data.CatalogueRepository
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
 
 
 class MovieFavoritesViewModel(private val catalogueRepository: CatalogueRepository) : ViewModel() {

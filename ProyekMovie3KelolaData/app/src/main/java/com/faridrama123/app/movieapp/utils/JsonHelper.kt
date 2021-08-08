@@ -1,9 +1,8 @@
-package com.faridrama123.app.utils
+package com.faridrama123.app.movieapp.utils
 
 import android.content.Context
-import android.util.Log
-import com.faridrama123.app.data.source.remote.response.ResultsMovieResponse
-import com.faridrama123.app.data.source.remote.response.ResultsTVShowResponse
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsMovieResponse
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsTVShowResponse
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException

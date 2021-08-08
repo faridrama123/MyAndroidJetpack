@@ -1,7 +1,6 @@
-package com.faridrama123.app.ui.movie
+package com.faridrama123.app.movieapp.ui.movie
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,10 +8,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.faridrama123.app.databinding.FragmentMovieBinding
-import com.faridrama123.app.utils.JsonHelper
-import com.faridrama123.app.viewmodel.ViewModelFactory
-import com.faridrama123.app.vo.Status
+import com.faridrama123.app.movieapp.databinding.FragmentMovieBinding
+import com.faridrama123.app.movieapp.viewmodel.ViewModelFactory
+import com.faridrama123.app.movieapp.vo.Status
 
 
 /**

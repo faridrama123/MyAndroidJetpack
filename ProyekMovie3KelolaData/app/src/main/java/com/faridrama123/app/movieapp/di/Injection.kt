@@ -1,10 +1,10 @@
-package com.faridrama123.app.di
+package com.faridrama123.app.movieapp.di
 
 import android.content.Context
-import com.faridrama123.app.data.CatalogueRepository
-import com.faridrama123.app.data.source.local.LocalDataSource
-import com.faridrama123.app.data.source.local.room.CatalogueDatabase
-import com.faridrama123.app.data.source.remote.RemoteDataSource
+import com.faridrama123.app.movieapp.data.CatalogueRepository
+import com.faridrama123.app.movieapp.data.source.local.LocalDataSource
+import com.faridrama123.app.movieapp.data.source.local.room.CatalogueDatabase
+import com.faridrama123.app.movieapp.data.source.remote.RemoteDataSource
 import com.faridrama123.app.movieapp.utils.AppExecutors
 import com.faridrama123.app.movieapp.utils.JsonHelper
 

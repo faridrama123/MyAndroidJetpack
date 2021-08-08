@@ -1,4 +1,4 @@
-package com.faridrama123.app.data.source.local.room
+package com.faridrama123.app.movieapp.data.source.local.room
 
 import androidx.room.TypeConverter
 

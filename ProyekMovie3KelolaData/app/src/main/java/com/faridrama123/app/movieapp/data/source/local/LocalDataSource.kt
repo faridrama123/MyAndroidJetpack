@@ -1,10 +1,10 @@
-package com.faridrama123.app.data.source.local
+package com.faridrama123.app.movieapp.data.source.local
 
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
-import com.faridrama123.app.data.source.local.room.CatalogueDao
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
+import com.faridrama123.app.movieapp.data.source.local.room.CatalogueDao
 
 
 class LocalDataSource private constructor(private val mCatalogueDao: CatalogueDao) {

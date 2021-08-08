@@ -1,12 +1,12 @@
-package com.faridrama123.app.data.source.local.room
+package com.faridrama123.app.movieapp.data.source.local.room
 
 
 
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.room.*
-import com.faridrama123.app.data.source.local.entity.MovieEntity
-import com.faridrama123.app.data.source.local.entity.TVShowEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.MovieEntity
+import com.faridrama123.app.movieapp.data.source.local.entity.TVShowEntity
 
 @Dao
 interface CatalogueDao {

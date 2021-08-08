@@ -1,4 +1,4 @@
-package com.faridrama123.app.data.source.remote.response
+package com.faridrama123.app.movieapp.data.source.remote.response
 
 data class TVShowPopularResponse(
 

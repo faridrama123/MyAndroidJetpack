@@ -1,11 +1,11 @@
-package com.faridrama123.app.data.source.remote
+package com.faridrama123.app.movieapp.data.source.remote
 
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.faridrama123.app.data.source.remote.response.ResultsMovieResponse
-import com.faridrama123.app.data.source.remote.response.ResultsTVShowResponse
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsMovieResponse
+import com.faridrama123.app.movieapp.data.source.remote.response.ResultsTVShowResponse
 import com.faridrama123.app.movieapp.utils.EspressoIdlingResource
 import com.faridrama123.app.movieapp.utils.JsonHelper
 
